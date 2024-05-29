@@ -1,15 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Gallery: React.FC = () => {
     return (
         <div className='flex bg-primary gap-10'>
             <div className='w-1/2'>
                 <div className='relative w-[835px]'>
-                    <img src="/images/history.svg" alt="): not found" className='absolute w-full min-h-[851px] top-[-851px] z-10' />
+                    <Image src="/images/history.svg" alt="): not found" className='absolute w-full min-h-[851px] top-[-851px] z-10' />
                     <div className='p-20 bg-gray max-h-[657px] pl-[300px]'>
-                        <p className='text-[#4FAFE0] text-5xl'>LET'S BUILD TOGETHER</p>
+                        <p className='text-[#4FAFE0] text-5xl'>LETS BUILD TOGETHER</p>
                         <p className='pt-10 text-white text-2xl'>Our foremost priority at Westport is to create exceptional
-                            environments that meet our client's building objectives
+                            environments that meet our clients building objectives
                             while exceeding their expectations.
                             Our design solutions are not only functionally appropriate and
                             aesthetically pleasing but also execute t enrich the lives of people

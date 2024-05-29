@@ -1,6 +1,6 @@
 import React from 'react';
 import CustomButton from '../../CustomButton';
-
+import Image from 'next/image'
 interface SliderProps{
     sub_title: string;
     title: string;
@@ -30,7 +30,7 @@ const SliderContainer: React.FC<SliderProps> = (props) => {
             </div>
 
             <div className='w-1/2 mt-auto'>
-                <img src={img_url} alt=":)Not Founded" className='max-w-[635px] max-h-[857px]' />
+                <Image src={img_url} alt=":)Not Founded" className='max-w-[635px] max-h-[857px]' />
             </div>
         </div>
     )

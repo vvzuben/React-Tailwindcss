@@ -1,11 +1,12 @@
 import React from 'react';
 import CustomButton from '../CustomButton';
+import Image from 'next/image'
 
 const ContactUs: React.FC = () => {
     return (
         <div className='flex bg-primary min-h-[941px] gap-10'>
             <div className='w-1/2 mt-auto'>
-                <img src="/images/contactus.svg" alt=":)Not Found" className='max-w-[834px] max-h-[801px]' />
+                <Image src="/images/contactus.svg" alt=":)Not Found" className='max-w-[834px] max-h-[801px]' />
             </div>
             <div className='w-1/2'>
                 <form className='bg-gray p-12 w-[635px] h-[801px] pt-[140px]'>

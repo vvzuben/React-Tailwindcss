@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const MenuDeActive: React.FC = () => {
 
@@ -9,7 +10,7 @@ const MenuDeActive: React.FC = () => {
                 <p className='text-[#253439] text-3xl absolute pt-5'>THAT EXCEED</p>
             </div>
             <p className='text-white text-8xl absolute vertical-rl rotate-180 right-20 top-[100px]'>EXPECTATIONS</p>
-            <img src="/images/vector.png" alt=":)Not Found" className='absolute bottom-[130px] left-[100px]'/>
+            <Image src="/images/vector.png" alt=":)Not Found" className='absolute bottom-[130px] left-[100px]'/>
         </div>
     )
 }

@@ -1,23 +1,44 @@
-import React from 'react';
-import { LinkedinOutlined, FacebookOutlined, TwitterOutlined, InstagramOutlined, SkypeOutlined } from "@ant-design/icons"
+import React, { useState } from 'react';
+import Image from 'next/image';
+import LinkedInIcon from '/images/linkedInIcon.svg';
 
-const SocialIconSet: React.FC = (props) => {
+interface IconSetProps {
+    color: string;
+}
+
+const SocialIconSet: React.FC<IconSetProps> = (props) => {
+    const { color } = props;
 
     return (
         <div className='flex gap-2 max-sm:flex-col pt-5'>
-            <div className='flex gap-2'>
-                <button className='text-white bg-transparent hover:bg-white hover:text-primary p-2 border w-10 h-10'><LinkedinOutlined /></button>
-                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><FacebookOutlined /></button>
-                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><InstagramOutlined /></button>
-                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><TwitterOutlined /></button>
-            </div>
-            <div className='flex gap-2'>
-                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><SkypeOutlined /></button>
-                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><LinkedinOutlined /></button>
-                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'>A</button>
-                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'>!</button>
-            </div>
-
+            {
+                color == 'white' ?
+                    <div className='flex gap-2'>
+                        <Image src="/images/Linkedin.svg" width={45} height={45} alt=':)Not Founded' />
+                        <Image src="/images/fB.svg" width={45} height={45} alt=':)Not Founded' />
+                        <Image src="/images/Instgram.svg" width={45} height={45} alt=':)Not Founded' />
+                        <Image src="/images/twitter.svg" width={45} height={45} alt=':)Not Founded' />
+                    </div> :
+                    <div className='flex gap-2'>
+                        <Image src="/images/Linkedin-blue.svg" width={45} height={45} alt=':)Not Founded' />
+                        <Image src="/images/fB-blue.svg" width={45} height={45} alt=':)Not Founded' />
+                        <Image src="/images/instrgam-blue.svg" width={45} height={45} alt=':)Not Founded' />
+                        <Image src="/images/twitter-blue.svg" width={45} height={45} alt=':)Not Founded' />
+                    </div>
+            }
+            {
+                color == "white" ?
+                    <div className='flex gap-2'>
+                        <Image src="/images/Scribd.svg" width={45} height={45} alt=':)Not Founded' />
+                        <Image src="/images/academia.svg" width={45} height={45} alt=':)Not Founded' />
+                        <Image src="/images/issue.svg" width={45} height={45} alt=':)Not Founded' />
+                    </div> :
+                    <div className='flex gap-2'>
+                        <Image src="/images/Scribd-blue.svg" width={45} height={45} alt=':)Not Founded' />
+                        <Image src="/images/academia-blue.svg" width={45} height={45} alt=':)Not Founded' />
+                        <Image src="/images/issue-blue.svg" width={45} height={45} alt=':)Not Founded' />
+                    </div>
+            }
         </div>
     )
 }

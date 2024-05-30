@@ -13,17 +13,17 @@ const SliderContainer: React.FC<SliderProps> = (props) => {
     const {sub_title, title, description, img_url} = props;
 
     return (
-        <div className='flex max-lg:flex-col min-h-[962px] bg-secondary gap-10'>
+        <div className='flex max-lg:flex-col bg-secondary gap-10'>
             <div className='w-1/2 max-lg:w-full  max-lg:justify-center max-lg:flex'>
                 <div className='max-w-[834px]'>
-                    <div className='max-w-[834px] max-lg:max-w-[635px] min-h-[540px] max-lg:pt-0 max-xl:p-20 pl-[300px] p-20 bg-black-500 shadow-xl'>
-                        <p className='text-2xl'>{sub_title}</p>
+                    <div className='max-w-[834px] max-lg:max-w-[635px] h-[635px] max-sm:h-[500px] max-lg:pt-0 max-xl:p-20 pl-[300px] p-20 bg-black-500 shadow-xl'>
+                        <p className='text-2xl max-sm:text-base'>{sub_title}</p>
                         <p className='text-5xl font-semibold pt-5'>{title}</p>
-                        <p className='text-white pt-5 text-2xl'>
+                        <p className='text-white pt-5 text-2xl max-sm:text-base'>
                             {description}
                         </p>
                     </div>
-                    <div className='pt-20 flex justify-end max-lg:py-10'>
+                    <div className='pt-20 flex justify-end max-lg:py-10 max-sm:justify-center'>
                         <CustomButton text='See all services' />
                     </div>
                 </div>

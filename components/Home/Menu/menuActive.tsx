@@ -22,7 +22,7 @@ const MenuActive = () => {
                     <li className='text-xl text-white max-[500px]:text-base'>L6L 6W1</li>
                     <li className='text-xl text-white max-[500px]:text-base'>Email:info@westportstructures.com</li>
                     <li className='text-xl text-white max-[500px]:text-base'>Phone:905-465-1728</li>
-                    <SocialIconSet />
+                    <SocialIconSet color='#3688B6'/>
                 </ul>
             </div>
         </div>

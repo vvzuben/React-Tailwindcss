@@ -4,15 +4,20 @@ import { LinkedinOutlined, FacebookOutlined, TwitterOutlined, InstagramOutlined,
 const SocialIconSet: React.FC = (props) => {
 
     return (
-        <div className='flex gap-2 pt-5'>
-            <button className='text-white bg-transparent hover:bg-white hover:text-primary p-2 border w-10 h-10'><LinkedinOutlined/></button>
-            <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><FacebookOutlined/></button>
-            <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><InstagramOutlined/></button>
-            <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><TwitterOutlined/></button>
-            <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><SkypeOutlined/></button>
-            <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><LinkedinOutlined/></button>
-            <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'>A</button>
-            <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'>!</button>
+        <div className='flex gap-2 max-sm:flex-col pt-5'>
+            <div className='flex gap-2'>
+                <button className='text-white bg-transparent hover:bg-white hover:text-primary p-2 border w-10 h-10'><LinkedinOutlined /></button>
+                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><FacebookOutlined /></button>
+                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><InstagramOutlined /></button>
+                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><TwitterOutlined /></button>
+            </div>
+            <div className='flex gap-2'>
+                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><SkypeOutlined /></button>
+                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'><LinkedinOutlined /></button>
+                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'>A</button>
+                <button className='text-white bg-transparent p-2 border w-10 h-10 hover:bg-white hover:text-primary'>!</button>
+            </div>
+
         </div>
     )
 }

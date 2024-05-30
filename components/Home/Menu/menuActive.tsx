@@ -3,7 +3,7 @@ import React from 'react';
 
 const MenuActive = () => {
     return (
-        <div className='p-20 pl-[40%]'>
+        <div className='p-20 pl-[40%] max-2xl:p-[10%]'>
             <div className='flex gap-20'>
                 <p className='text-[#4FAFE0] text-5xl vertical-rl rotate-180'>SITEMAP</p>
                 <ul className='flex flex-col gap-4'>

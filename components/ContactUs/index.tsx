@@ -5,7 +5,7 @@ import Image from 'next/image'
 const ContactUs: React.FC = () => {
     return (
         <div className='flex max-xl:flex-col max-xl:justify-center max-xl:items-center bg-primary min-h-[941px] gap-10'>
-            <div className='w-1/2 max-xl:w-full '>
+            <div className='w-1/2 max-xl:w-full mt-auto'>
                 <Image src="/images/contactus.svg" alt=":)Not Found" width={834} height={801} layout='responsive' 
                 className='max-xl:m-auto max-w-[834px] max-h-[801px]' 
             />

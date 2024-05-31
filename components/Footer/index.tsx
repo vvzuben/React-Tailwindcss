@@ -6,8 +6,8 @@ const Footer: React.FC = () => {
     return (
         <div className='bg-[#182225]'>
             <div className=' px-[300px] max-xl:px-[100px] p-20 max-[500px]:p-7'>
-                <div className='flex gap-10 max-[800px]:flex-col max-[500px]:pb-20'>
-                    <div className='w-1/2 flex gap-10 w-full'>
+                <div className='flex gap-10 max-[860px]:flex-col max-[500px]:pb-20'>
+                    <div className='w-1/2 flex gap-10 w-full max-[860px]:justify-center'>
                         <div>
                             <p className='text-[#4FAFE0] text-2xl pt-5'> Sitemap</p>
                             <p className='text-white text-base pt-5'>About Us</p>
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
                     <div className='w-1/2 flex gap-20 w-full'>
-                        <div className='m-auto'>
+                        <div className='max-2xl:m-auto'>
                             <p className='text-[#4FAFE0] text-2xl pt-5'>Follow us</p>
                             <SocialIconSet color='white' />
                         </div>
@@ -33,8 +33,9 @@ const Footer: React.FC = () => {
                 </div>
             </div>
             <div className='border-t border-white flex justify-center gap-3'>
-                <Image src="/images/copyright.svg" width={25} height={25} alt=":)Not Founded" />
-                <p className='text-white py-4'>
+                <Image src="/images/copyright.svg" className='max-[400px]:ml-4' width={25} height={25} alt=":)Not Founded" />
+
+                <p className='text-white py-4 max-[400px]:text-center'>
                     Westport Structures Inc. 2023. All Rights Reserved.
                 </p>
             </div>

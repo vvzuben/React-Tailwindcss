@@ -6,7 +6,7 @@ const Gallery: React.FC = () => {
         <div className='flex bg-primary gap-10 max-xl:flex-col'>
             <div className='w-1/2 max-xl:w-full'>
                 <div className='relative max-w-[831px] max-xl:m-auto'>
-                    <Image src="/images/history.svg" alt="): Not found" height={851} width={831} 
+                    <Image src="/images/gallery-1.png" alt="): Not found" height={851} width={831} 
                         className='absolute h-[851px] top-[-851px] max-[1700px]:relative max-[1700px]:top-0 max-[1700px]:h-full' 
                     />
                     <div className='p-20 bg-gray min-h-[657px] pl-[300px] max-2xl:p-20 max-[500px]:p-10'>
@@ -21,7 +21,7 @@ const Gallery: React.FC = () => {
                     </div>
                 </div>
                 <div className='max-w-[635px] ml-auto max-[1800px]:mt-20 max-[1800px]:m-auto mt-20 relative'>
-                    <Image src="/images/homes.svg" alt=":) Not founded" width={635} height={851}/>
+                    <Image src="/images/gallery-2.png" alt=":) Not founded" width={635} height={851}/>
                     <footer className='absolute h-[139px] w-full bottom-0 backdrop-blur-md bg-black/50 flex items-center justify-center'>
                         <p className='text-white text-4xl max-[500px]:text-2xl'>CUSTOM RESIDENTIAL HOMES</p>
                     </footer>
@@ -29,13 +29,13 @@ const Gallery: React.FC = () => {
             </div>
             <div className='w-1/2 max-[1800px]:m-auto max-xl:w-full'>
                 <div className='max-w-[635px] mt-20 relative max-[1800px]:m-auto'>
-                    <Image width={635} height={851} src="/images/commercial.svg" alt=":) Not founded" />
+                    <Image width={635} height={851} src="/images/gallery-3.png" alt=":) Not founded" />
                     <footer className='absolute h-[139px] w-full bottom-0 backdrop-blur-md bg-black/50 flex items-center justify-center'>
                         <p className='text-white text-4xl max-[500px]:text-2xl'>COMMERCIAL PROPERTIES</p>
                     </footer>
                 </div>
                 <div className='max-w-[635px] mt-20 relative mb-20 max-[1800px]:m-auto max-[1800px]:mt-20 max-[1800px]:mb-20'>
-                    <Image width={635} height={851} src="/images/multi-family.svg" alt=":) Not founded" />
+                    <Image width={635} height={851} src="/images/gallery-4.png" alt=":) Not founded" />
                     <footer className='absolute h-[139px] w-full bottom-0 backdrop-blur-md bg-black/50 flex items-center justify-center'>
                         <p className='text-white text-4xl max-[500px]:text-2xl'>MULTI-FAMILY PROPERTIES</p>
                     </footer>

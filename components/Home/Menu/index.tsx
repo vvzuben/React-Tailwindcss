@@ -8,8 +8,8 @@ const Menu: React.FC = () => {
 
     return (
         <div className='bg-gray w-[945px] max-lg:w-full h-[860px] mt-auto relative'>
-            <div className='flex justify-end m-3'>
-                <Hamburger toggled={isOpen} size={50} toggle={setOpen} color='white' />
+            <div className='flex justify-end m-3 '>
+                <Hamburger toggled={isOpen} size={35} toggle={setOpen} color='white' />
             </div>
             {
                 isOpen ? <MenuActive /> : <MenuDeActive />
